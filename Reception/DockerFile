@@ -1,0 +1,7 @@
+FROM python:3.9
+
+ADD ReceptionMainApp.py .
+
+RUN pip install gspread tkinter customtkinter pandas
+
+CMD ["python", "./ReceptionMainApp.py"]
